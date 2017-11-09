@@ -1,5 +1,3 @@
-
-
 public class Solutions {
     // Checkpoint 1
     // O(n)
@@ -10,10 +8,11 @@ public class Solutions {
         int size = 2 * a - 1;
         int[][] temp = new int[size][size];
         for (int i = 0; i < a; i++) {
-            // top row
             int r = i;
             int c = i;
             int current = a - i;
+
+            // top row
             while (c < size - i) {
                 temp[r][c++] = current;
             }
